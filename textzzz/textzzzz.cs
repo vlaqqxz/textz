@@ -55,8 +55,19 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Welcome to TextZZZ - Encryption/Decryption Tool!");
+        Console.Title = "textzzzz - Encryption/Decryption Tool";
+        Console.WriteLine("Welcome to textzzzz - Encryption/Decryption Tool!");
         Console.WriteLine("                  by vlaqqxz");
+        Console.ForegroundColor = ConsoleColor.DarkRed;
+        Console.WriteLine(@"
+
+  |                 |                       
+  __|   _ \ \ \  /  __| _  / _  / _  / _  / 
+  |     __/  `  <   |     /    /    /    /  
+ \__| \___|  _/\_\ \__| ___| ___| ___| ___| 
+                                            
+");
+        Console.ResetColor();
         while (true)
         {
             Console.WriteLine("\nDo you want to encrypt or decrypt? (e/d) or 'q' to quit:");
