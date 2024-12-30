@@ -70,13 +70,13 @@ class Program
         Console.ResetColor();
         while (true)
         {
-            Console.WriteLine("\nDo you want to encrypt or decrypt? (e/d) or 'q' to quit:");
+            Console.Write("\nDo you want to encrypt or decrypt? (e/d) or 'q' to quit:");
 
             string choice = Console.ReadLine().ToLower();
 
             if (choice == "e")
             {
-                Console.WriteLine("Enter the phrase to encrypt:");
+                Console.Write("Enter the phrase to encrypt:");
                 string phraseToEncrypt = Console.ReadLine();
                 var (encrypted, key, iv) = AesEncryption.Encrypt(phraseToEncrypt);
                 Console.WriteLine($"Encrypted phrase: {encrypted}");
